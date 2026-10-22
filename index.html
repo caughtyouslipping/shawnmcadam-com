@@ -2,701 +2,2063 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shawn McAdam | Direct-Response UGC Creator &amp; Performance Ad Strategist</title>
-  <meta name="description" content="High-converting UGC videos and commercial product ads built to scale paid media. U.S. Marine Corps Veteran &amp; E-Commerce Founder ($10k/day scale) based in South Florida.">
-  <link rel="canonical" href="https://shawnmcadam.com/">
-  <meta property="og:title" content="Shawn McAdam | Direct-Response UGC Creator &amp; Ad Strategist">
-  <meta property="og:description" content="Direct-response creative engineered to stop the scroll in the first 3 seconds, beat ad fatigue, and drive measurable ROAS. 3-5 day turnaround.">
-  <meta property="og:url" content="https://shawnmcadam.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://shawnmcadam.com/assets/images/shawn_avatar_sun_rooftop.jpg">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Shawn McAdam | Direct-Response UGC Creator</title>
+  <meta name="description" content="High-converting UGC video ads and commercial product photography for performance brands. Fort Lauderdale, FL. Marine Corps Veteran. 3-5 day turnaround.">
+  
+  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, Syne -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            obsidian: '#0A0A0C',
-            slateCard: '#141418',
-            slateHover: '#1C1C24',
-            slateBorder: '#22222A',
-            marineGold: '#F59E0B',
-            electricCyan: '#06B6D4',
-            emeraldGrowth: '#10B981'
-          },
-          fontFamily: {
-            display: ['"Plus Jakarta Sans"', 'sans-serif'],
-            sans: ['"Inter"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace']
-          }
-        }
-      }
-    }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+
   <style>
-    body {
-      background-color: #0A0A0C;
-      color: #FFFFFF;
-      font-family: 'Inter', sans-serif;
-      -webkit-font-smoothing: antialiased;
+    :root {
+      --bg-dark: #07100B;
+      --bg-surface: #0B1911;
+      --bg-card: #102318;
+      --bg-card-hover: #162E20;
+      --border-subtle: rgba(212, 175, 55, 0.16);
+      --border-gold: rgba(212, 175, 55, 0.45);
+      --gold-primary: #D4AF37;
+      --gold-light: #F4E4BA;
+      --gold-glow: rgba(212, 175, 55, 0.25);
+      --emerald-accent: #10B981;
+      --emerald-hover: #059669;
+      --emerald-glow: rgba(16, 185, 129, 0.35);
+      --text-main: #FFFFFF;
+      --text-muted: #A1BAAC;
+      --text-subtle: #688272;
+      --font-display: 'Syne', sans-serif;
+      --font-heading: 'Space Grotesk', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
     }
-    .glass-nav {
-      background: rgba(10, 10, 12, 0.88);
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+    }
+
+    /* Permanent Studio Dots (Option 3) Background */
+    body {
+      background-color: #07100B;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.3) 0%, transparent 65%),
+        radial-gradient(circle at 85% 55%, rgba(212, 175, 55, 0.14) 0%, transparent 45%),
+        radial-gradient(rgba(212, 175, 55, 0.22) 1.2px, transparent 1.2px);
+      background-size: 100% 100%, 100% 100%, 28px 28px;
+      min-height: 100vh;
+      overflow-x: hidden;
+      padding-bottom: 90px;
+      line-height: 1.5;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Sticky Top Navigation */
+    header.top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 16, 11, 0.92);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 12px 0;
     }
-    .gold-glow {
-      box-shadow: 0 0 30px rgba(245, 158, 11, 0.14);
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
     }
-    .emerald-glow {
-      box-shadow: 0 0 25px rgba(16, 185, 129, 0.25);
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
     }
-    .video-card:hover .play-badge {
-      transform: scale(1.06);
+
+    .brand-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      padding: 2px;
+      background: linear-gradient(135deg, var(--gold-primary), var(--emerald-accent));
+      flex-shrink: 0;
+      box-shadow: 0 0 14px rgba(212, 175, 55, 0.3);
+    }
+
+    .brand-avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .brand-text h1 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .brand-text span {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-gold-sm {
+      background: linear-gradient(135deg, #D4AF37, #B8860B);
+      color: #07100B;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 9px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+      transition: transform 0.15s ease, opacity 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-gold-sm:active {
+      transform: scale(0.97);
+    }
+
+    /* Hero Section: Split Layout with Autoplaying Las Olas Pitch Video ONLY on Top */
+    section.hero-split {
+      padding: 36px 0 32px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    @media (min-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 52px;
+      }
+    }
+
+    .hero-badge-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: rgba(11, 25, 17, 0.85);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-pill.live-slot {
+      border-color: rgba(16, 185, 129, 0.45);
+      color: #34D399;
+      background: rgba(16, 185, 129, 0.1);
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: var(--emerald-accent);
+      box-shadow: 0 0 10px var(--emerald-accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5.5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+
+    .hero-headline .text-gold {
+      color: #FFFFFF;
+      display: inline-block;
+    }
+
+    .hero-subhead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      line-height: 1.6;
+      margin-bottom: 26px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .btn-primary-emerald {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #10B981, #059669);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 13px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 20px var(--emerald-glow);
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn-primary-emerald:active {
+      transform: scale(0.98);
+    }
+
+    .btn-secondary-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(11, 25, 17, 0.7);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 13px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .btn-secondary-outline:hover {
+      background: rgba(212, 175, 55, 0.12);
+    }
+
+    /* Hero Right: Autoplaying Creator Pitch Video (ONLY place Las Olas Pitch appears) */
+    .hero-video-hero-card {
+      position: relative;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-gold);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(212, 175, 55, 0.2);
+      max-width: 420px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .hero-video-viewport {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .hero-video-viewport video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-video-badge-top {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    .hero-live-pill {
+      background: rgba(7, 16, 11, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #34D399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-sound-toggle-btn {
+      background: rgba(7, 16, 11, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: background 0.15s ease;
+    }
+
+    .hero-sound-toggle-btn:hover {
+      background: rgba(212, 175, 55, 0.2);
+    }
+
+    .hero-video-overlay-bottom {
+      position: absolute;
+      bottom: 0;
+      inset-x: 0;
+      background: linear-gradient(to top, rgba(7, 16, 11, 0.96) 0%, rgba(7, 16, 11, 0.5) 65%, transparent 100%);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    .hero-video-name {
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FFF;
+      line-height: 1.2;
+    }
+
+    .hero-video-role {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-video-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .hero-tag-chip {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-muted);
+    }
+
+    /* Proof HUD Strip */
+    section.proof-strip {
+      padding: 24px 0 44px 0;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .proof-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+    }
+
+    .proof-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 6px 12px;
+      border-right: 1px solid var(--border-subtle);
+    }
+
+    .proof-cell:last-child {
+      border-right: none;
+    }
+
+    .proof-number {
+      font-family: var(--font-heading);
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1.1;
+    }
+
+    .proof-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    /* Section Headers */
+    .section-head {
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .section-eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3.8vw, 2.3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #FFF;
+      line-height: 1.2;
+    }
+
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 640px;
+    }
+
+    /* 9:16 Video Showcase Reel: 3 Full Commercial Ads (Las Olas Pitch Removed Here) */
+    section.video-showcase {
+      padding: 30px 0 54px 0;
+    }
+
+    .video-grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media (min-width: 640px) {
+      .video-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 990px) {
+      .video-grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+    }
+
+    .video-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      position: relative;
+    }
+
+    .video-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-3px);
+    }
+
+    .video-viewport {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .video-viewport video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .video-top-badges {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .badge-angle {
+      background: rgba(7, 16, 11, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-duration {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: #FFF;
+    }
+
+    .video-play-layer {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.3);
+      transition: opacity 0.2s ease;
+      z-index: 3;
+    }
+
+    .video-card.playing .video-play-layer {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .play-trigger-circle {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.95);
+      color: #07100B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+      transition: transform 0.15s ease;
+    }
+
+    .video-card:active .play-trigger-circle {
+      transform: scale(0.92);
+    }
+
+    .play-trigger-circle svg {
+      width: 22px;
+      height: 22px;
+      fill: #07100B;
+      margin-left: 3px;
+    }
+
+    .video-bottom-hud {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      z-index: 2;
+      pointer-events: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .audio-indicator {
+      background: rgba(7, 16, 11, 0.85);
+      backdrop-filter: blur(6px);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .video-meta-body {
+      padding: 16px;
+      background: var(--bg-surface);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex-grow: 1;
+    }
+
+    .video-campaign-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #FFF;
+      line-height: 1.25;
+    }
+
+    .video-hook-snippet {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .video-tag-strip {
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Photography Gallery Section (Las Olas Pitch Removed Here) */
+    section.photo-showcase {
+      padding: 30px 0 54px 0;
+    }
+
+    .photo-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .photo-tab-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .photo-tab-btn.active {
+      background: var(--bg-card);
+      border-color: var(--gold-primary);
+      color: var(--gold-light);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+    }
+
+    @media (min-width: 1040px) {
+      .photo-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+    }
+
+    .photo-card {
+      position: relative;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .photo-card:hover {
+      border-color: var(--border-gold);
+      transform: scale(1.02);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-card-info {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7, 16, 11, 0.95) 0%, rgba(7, 16, 11, 0.2) 60%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 14px;
+    }
+
+    .photo-category {
+      font-size: 0.65rem;
+      color: var(--gold-primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .photo-title {
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #FFF;
+      line-height: 1.25;
+      margin-top: 2px;
+    }
+
+    /* Rates & Packages */
+    section.rates-section {
+      padding: 30px 0 54px 0;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 900px) {
+      .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+    }
+
+    .pricing-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .pricing-card:hover {
+      border-color: var(--border-gold);
+    }
+
+    .pricing-card.featured {
+      background: linear-gradient(180deg, #142C1E 0%, #0B1911 100%);
+      border-color: var(--gold-primary);
+      box-shadow: 0 12px 35px rgba(212, 175, 55, 0.18);
+    }
+
+    .popular-pill {
+      position: absolute;
+      top: -12px;
+      right: 22px;
+      background: linear-gradient(135deg, #D4AF37, #B8860B);
+      color: #07100B;
+      font-family: var(--font-heading);
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+    }
+
+    .tier-name {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFF;
+    }
+
+    .tier-target {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin: 20px 0 14px 0;
+    }
+
+    .price-value {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .price-term {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .revision-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--gold-primary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .tier-features {
+      list-style: none;
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      flex-grow: 1;
+    }
+
+    .tier-features li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      line-height: 1.45;
+    }
+
+    .tier-features li svg {
+      width: 15px;
+      height: 15px;
+      fill: var(--emerald-accent);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .tier-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 13px;
+      border-radius: 10px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+      cursor: pointer;
+    }
+
+    .tier-btn-outline {
+      background: transparent;
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+    }
+
+    .tier-btn-outline:hover {
+      background: rgba(212, 175, 55, 0.12);
+    }
+
+    .tier-btn-solid {
+      background: linear-gradient(135deg, #D4AF37, #B8860B);
+      color: #07100B;
+      box-shadow: 0 4px 18px rgba(212, 175, 55, 0.3);
+    }
+
+    .tier-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Add-ons Matrix */
+    .addons-wrapper {
+      margin-top: 24px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 22px;
+    }
+
+    .addons-head {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .addons-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    @media (min-width: 768px) {
+      .addons-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+    }
+
+    .addon-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 14px;
+    }
+
+    .addon-name {
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #FFF;
+    }
+
+    .addon-price {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin: 4px 0 2px 0;
+    }
+
+    .addon-info {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Direct Collaboration & Booking */
+    section.booking-section {
+      padding: 30px 0 30px 0;
+    }
+
+    .booking-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (min-width: 768px) {
+      .booking-box {
+        padding: 40px;
+      }
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 640px) {
+      .form-row-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 7px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-input {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9px;
+      padding: 12px 16px;
+      color: #FFF;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-input:focus {
+      border-color: var(--gold-primary);
+    }
+
+    .btn-submit-form {
+      width: 100%;
+      background: linear-gradient(135deg, #10B981, #059669);
+      color: #FFF;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 20px var(--emerald-glow);
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn-submit-form:active {
+      transform: scale(0.98);
+    }
+
+    .direct-links-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .direct-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    .direct-link-btn:hover {
+      color: var(--gold-primary);
+    }
+
+    .direct-link-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--gold-primary);
+    }
+
+    /* Minimalist Footer with Icon-Only Socials */
+    footer.site-footer {
+      padding: 30px 0 20px 0;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: 30px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .footer-social-icons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-icon-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .footer-icon-btn:hover {
+      border-color: var(--gold-primary);
+      background: var(--bg-card);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .footer-icon-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .footer-copy {
+      font-size: 0.76rem;
+      color: var(--text-subtle);
+      text-align: center;
+    }
+
+    /* Fixed Mobile Bottom Action Bar */
+    .mobile-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(7, 16, 11, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-top: 1px solid var(--border-subtle);
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .bar-price-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bar-price-sub {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .bar-price-sub strong {
+      color: var(--gold-light);
+      font-size: 0.98rem;
+    }
+
+    .bar-delivery-pill {
+      font-size: 0.65rem;
+      color: #34D399;
+      font-weight: 700;
+    }
+
+    .bar-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-bar-phone {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 9px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-bar-cta {
+      background: linear-gradient(135deg, #D4AF37, #B8860B);
+      color: #07100B;
+      padding: 9px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 800;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.94);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-wrapper {
+      max-width: 90vw;
+      max-height: 85vh;
+      position: relative;
+    }
+
+    .lightbox-wrapper img {
+      max-width: 100%;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 1px solid var(--border-gold);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: -38px;
+      right: 0;
+      background: none;
+      border: none;
+      color: #FFF;
+      font-size: 2.2rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .form-feedback {
+      display: none;
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    .form-feedback.success {
+      display: block;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid var(--emerald-accent);
+      color: #34D399;
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-marineGold selection:text-black">
+<body>
 
-  <!-- Sticky Navigation -->
-  <header class="sticky top-0 z-50 glass-nav border-b border-slateBorder">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3">
-        <img src="assets/images/shawn_avatar_sun_rooftop.jpg" alt="Shawn McAdam" class="w-10 h-10 rounded-full object-cover border border-marineGold/60">
-        <div>
-          <span class="font-display font-extrabold text-base sm:text-lg tracking-tight text-white block leading-none">SHAWN MCADAM</span>
-          <span class="font-mono text-[11px] text-marineGold tracking-wider uppercase">UGC &amp; Paid Media Creative • South FL</span>
+  <!-- Sticky Top Navigation -->
+  <header class="top-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="brand-logo">
+          <!-- Top Left Avatar: Remastered Sun Behind Head Photo -->
+          <div class="brand-avatar">
+            <img src="assets/images/shawn_avatar_sun_rooftop.jpg" alt="Shawn McAdam golden hour sun portrait">
+          </div>
+          <div class="brand-text">
+            <h1>Shawn McAdam</h1>
+            <span><span class="live-dot"></span> UGC Creator &bull; Fort Lauderdale</span>
+          </div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#videos">Videos</a>
+          <a href="#stills">Photography</a>
+          <a href="#rates">Rate Card</a>
+          <a href="#collab">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#rates" class="hero-pill" style="padding: 7px 12px; font-size: 0.78rem;">Rates</a>
+          <a href="#collab" class="btn-gold-sm">Book Shoot</a>
         </div>
-      </a>
-
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-300">
-        <a href="#videos" class="hover:text-white transition">Video Showcase</a>
-        <a href="#photos" class="hover:text-white transition">Photo &amp; Macro</a>
-        <a href="#compcard" class="hover:text-white transition">Comp Card</a>
-        <a href="#pricing" class="hover:text-white transition">Packages &amp; Rates</a>
-      </nav>
-
-      <div class="flex items-center gap-3">
-        <a href="tel:9543308737" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono text-gray-300 hover:text-white px-3 py-2 rounded-lg border border-slateBorder bg-slateCard">
-          <span>(954) 330-8737</span>
-        </a>
-        <a href="#contact" class="inline-flex items-center gap-2 bg-emeraldGrowth hover:bg-emerald-400 text-black font-display font-bold text-xs sm:text-sm px-4 py-2.5 rounded-lg transition emerald-glow">
-          <span>Book Content</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-        </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative overflow-hidden pt-10 pb-16 sm:pt-16 sm:pb-20 border-b border-slateBorder">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+  <main class="container">
+
+    <!-- Section 1: Hero Split Layout with Live Autoplaying UGC Pitch Video (ONLY place Las Olas Pitch appears) -->
+    <section class="hero-split">
+      <div class="hero-grid">
         
-        <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-marineGold/10 border border-marineGold/30 text-marineGold text-xs font-mono font-semibold uppercase tracking-wider">
-            <span class="w-2 h-2 rounded-full bg-marineGold animate-pulse"></span>
-            U.S. Marine Corps Veteran &bull; $10k/Day Live Commerce Operator
+        <!-- Left: Pitch & Value Proposition -->
+        <div class="hero-content">
+          <div class="hero-badge-strip">
+            <span class="hero-pill live-slot">
+              <span class="live-dot"></span> Booking Available
+            </span>
+            <span class="hero-pill">US Marine Corps Veteran</span>
+            <span class="hero-pill">Fort Lauderdale, FL</span>
+            <span class="hero-pill">3–5 Day Turnaround</span>
           </div>
 
-          <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[54px] leading-[1.08] tracking-tight text-white">
-            High-Converting UGC Videos &amp; Commercial Product Ads <span class="text-transparent bg-clip-text bg-gradient-to-r from-marineGold via-amber-300 to-electricCyan">Built to Scale Paid Media.</span>
-          </h1>
+          <h2 class="hero-headline">
+            High-Converting UGC for <br>
+            <span class="text-gold">Performance Brands.</span>
+          </h2>
 
-          <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-            Direct-response creative engineered to stop the scroll in the first 3 seconds, beat ad fatigue, and drive measurable return on ad spend. Grounded South Florida conviction with <span class="text-white font-semibold">3 to 5 business day turnaround</span>—on time, every time.
+          <p class="hero-subhead">
+            Authentic on-camera presence, scroll-stopping 3-second hooks, and studio-grade B-roll. Engineered specifically for Meta, TikTok &amp; YouTube Paid Ads.
           </p>
 
-          <div class="flex flex-wrap gap-3 pt-1">
-            <a href="#videos" class="inline-flex items-center gap-2 bg-white hover:bg-gray-200 text-black font-display font-bold text-sm px-6 py-3.5 rounded-xl transition">
-              <svg class="w-4 h-4 text-obsidian fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              Watch Video Work
+          <div class="hero-cta-group">
+            <a href="#videos" class="btn-primary-emerald">
+              <span class="material-symbols-outlined" style="font-size: 18px;">play_arrow</span>
+              Watch Ad Reels
             </a>
-            <a href="#pricing" class="inline-flex items-center gap-2 bg-slateCard hover:bg-slateHover text-white border border-slateBorder font-display font-bold text-sm px-6 py-3.5 rounded-xl transition">
-              View Pricing &amp; Licensing
-            </a>
-            <a href="#contact" class="inline-flex items-center gap-2 bg-marineGold/15 hover:bg-marineGold/25 text-marineGold border border-marineGold/40 font-display font-bold text-sm px-5 py-3.5 rounded-xl transition">
-              Send Brief
+            <a href="#collab" class="btn-secondary-outline">
+              Book a Collaboration
             </a>
           </div>
-
-          <!-- Core Niches Pills -->
-          <div class="pt-3 flex flex-wrap gap-2 text-xs text-gray-400">
-            <span class="px-3 py-1 rounded-md bg-slateCard border border-slateBorder">Health, Fitness &amp; Supplements</span>
-            <span class="px-3 py-1 rounded-md bg-slateCard border border-slateBorder">Men's Grooming &amp; Fragrance</span>
-            <span class="px-3 py-1 rounded-md bg-slateCard border border-slateBorder">Consumer Tech &amp; EDC</span>
-            <span class="px-3 py-1 rounded-md bg-slateCard border border-slateBorder">Beverage &amp; Hospitality</span>
-          </div>
         </div>
 
-        <!-- Hero Portrait & Operator Scorecard -->
-        <div class="lg:col-span-5">
-          <div class="relative rounded-2xl bg-slateCard border border-slateBorder p-3 gold-glow">
-            <div class="grid grid-cols-2 gap-3">
-              <div class="col-span-2 sm:col-span-1 relative rounded-xl overflow-hidden aspect-[4/5]">
-                <img src="assets/images/shawn_avatar_sun_rooftop.jpg" alt="Shawn McAdam South Florida Rooftop" class="w-full h-full object-cover">
-                <div class="absolute bottom-2 left-2 right-2 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg border border-white/10">
-                  <p class="font-display font-bold text-xs text-white">Shawn McAdam</p>
-                  <p class="font-mono text-[10px] text-marineGold">Parkland / Fort Lauderdale, FL</p>
-                </div>
-              </div>
-              <div class="col-span-2 sm:col-span-1 flex flex-col justify-between gap-3">
-                <div class="rounded-xl overflow-hidden aspect-[4/3] relative">
-                  <img src="assets/images/anchor_executive_armchair_remastered.jpg" alt="Executive Studio Anchor" class="w-full h-full object-cover">
-                </div>
-                <div class="rounded-xl bg-obsidian border border-slateBorder p-3.5 space-y-2">
-                  <div class="flex items-center justify-between">
-                    <span class="font-mono text-[11px] text-gray-400 uppercase">Turnaround</span>
-                    <span class="font-mono text-xs font-bold text-emeraldGrowth">3–5 Business Days</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="font-mono text-[11px] text-gray-400 uppercase">Live Sales Peak</span>
-                    <span class="font-mono text-xs font-bold text-white">$10,000 / Day</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="font-mono text-[11px] text-gray-400 uppercase">B2B Volume</span>
-                    <span class="font-mono text-xs font-bold text-white">$450K / Month</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="font-mono text-[11px] text-gray-400 uppercase">Format</span>
-                    <span class="font-mono text-xs font-bold text-electricCyan">9:16 4K Native</span>
-                  </div>
-                </div>
-              </div>
+        <!-- Right: Autoplaying Direct Creator Pitch Video -->
+        <div class="hero-video-hero-card" onclick="toggleHeroSound()">
+          <div class="hero-video-viewport">
+            <div class="hero-video-badge-top">
+              <span class="hero-live-pill">
+                <span class="live-dot"></span> Featured Pitch
+              </span>
+              <button class="hero-sound-toggle-btn" id="heroSoundBtn" type="button">
+                <span class="material-symbols-outlined" style="font-size: 14px;" id="heroSoundIcon">volume_off</span>
+                <span id="heroSoundText">Unmute</span>
+              </button>
             </div>
-          </div>
-        </div>
 
-      </div>
-
-      <!-- Metrics Bar -->
-      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-slateCard border border-slateBorder rounded-xl p-4">
-          <p class="font-mono text-xl sm:text-2xl font-bold text-white">3–5 Days</p>
-          <p class="text-xs text-gray-400 mt-1">Guaranteed Delivery Turnaround</p>
-        </div>
-        <div class="bg-slateCard border border-slateBorder rounded-xl p-4">
-          <p class="font-mono text-xl sm:text-2xl font-bold text-marineGold">$10K/Day</p>
-          <p class="text-xs text-gray-400 mt-1">Proven Live Selling Turnover (Whatnot &amp; TikTok)</p>
-        </div>
-        <div class="bg-slateCard border border-slateBorder rounded-xl p-4">
-          <p class="font-mono text-xl sm:text-2xl font-bold text-electricCyan">9:16 Native</p>
-          <p class="text-xs text-gray-400 mt-1">Built for Meta Reels, TikTok &amp; YouTube Shorts</p>
-        </div>
-        <div class="bg-slateCard border border-slateBorder rounded-xl p-4">
-          <p class="font-mono text-xl sm:text-2xl font-bold text-emeraldGrowth">USMC Vet</p>
-          <p class="text-xs text-gray-400 mt-1">Meritorious Mast &bull; Zero-Excuse Execution</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. Featured Video Showcase (Inline 9:16 Streaming Player) -->
-  <section id="videos" class="py-16 sm:py-20 border-b border-slateBorder">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
-        <div>
-          <span class="font-mono text-xs uppercase tracking-widest text-electricCyan block mb-2">01 // Inline 9:16 Video Proof</span>
-          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white">Featured Direct-Response Video Showcase</h2>
-        </div>
-        <p class="text-sm text-gray-400 max-w-md">
-          Tap any video to play inline with full audio. Engineered with 3-second pattern-interrupt hooks, clean macro B-roll, and natural acoustics.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Video 01 -->
-        <div class="video-card bg-slateCard border border-slateBorder rounded-2xl overflow-hidden flex flex-col">
-          <div class="relative aspect-[9/16] bg-black">
-            <video id="vid-1" class="w-full h-full object-cover" playsinline preload="metadata" poster="assets/images/photo_hero_gaia.jpg" controls>
-              <source src="assets/videos/01_gaia_herbs_master_10s.mp4" type="video/mp4">
+            <!-- Autoplaying Muted Loop Video (Click to Unmute) -->
+            <video id="heroPitchVideo" autoplay muted loop playsinline poster="assets/images/poster_las_olas_pitch.jpg">
+              <source src="assets/videos/video_04_las_olas_pitch.mp4" type="video/mp4">
             </video>
-            <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10 pointer-events-none">
-              <span class="font-mono text-[11px] text-emeraldGrowth font-bold">01 &bull; HEALTH &amp; SUPPLEMENTS</span>
-            </div>
-          </div>
-          <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <h3 class="font-display font-bold text-base text-white">Gaia Herbs Lion's Mane Routine</h3>
-              <p class="text-xs text-gray-400 mt-1">Ice water splash opening hook into kitchen island bottle reveal, macro capsule dosage pour, and focused morning desk workflow.</p>
-            </div>
-            <div class="pt-2 border-t border-slateBorder flex items-center justify-between text-[11px] font-mono text-gray-400">
-              <span>9:16 Vertical &bull; 10s</span>
-              <span class="text-marineGold">Sensory Routine Hook</span>
+
+            <div class="hero-video-overlay-bottom">
+              <span class="hero-video-role">On-Camera Talent &bull; Creator</span>
+              <div class="hero-video-name">Shawn McAdam</div>
+              <div class="hero-video-tags">
+                <span class="hero-tag-chip">Direct-to-Camera Pitch</span>
+                <span class="hero-tag-chip">South Florida Daylight</span>
+                <span class="hero-tag-chip">Natural Charisma</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Video 02 -->
-        <div class="video-card bg-slateCard border border-slateBorder rounded-2xl overflow-hidden flex flex-col">
-          <div class="relative aspect-[9/16] bg-black">
-            <video id="vid-2" class="w-full h-full object-cover" playsinline preload="metadata" poster="assets/images/photo_hero_creed.jpg" controls>
-              <source src="assets/videos/02_creed_cologne_master_20s.mp4" type="video/mp4">
+      </div>
+    </section>
+
+    <!-- Section 2: Performance Proof Strip -->
+    <section class="proof-strip">
+      <div class="proof-grid">
+        <div class="proof-cell">
+          <div class="proof-number">3–5 Days</div>
+          <div class="proof-label">Delivery Turnaround</div>
+        </div>
+        <div class="proof-cell">
+          <div class="proof-number">4K 60FPS</div>
+          <div class="proof-label">Native Studio Quality</div>
+        </div>
+        <div class="proof-cell">
+          <div class="proof-number">2 Rounds</div>
+          <div class="proof-label">Revisions on All Packs</div>
+        </div>
+        <div class="proof-cell">
+          <div class="proof-number">100%</div>
+          <div class="proof-label">Raw B-Roll Rights Ready</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: 9:16 Video Showcase Reel (3 Distinct Commercial Campaigns) -->
+    <section class="video-showcase" id="videos">
+      <div class="section-head">
+        <h3 class="section-title">Tested Ad Formats &amp; Commercial Cuts</h3>
+        <p class="section-desc">Tap any video to play with native audio. 9:16 vertical ratio optimized for TikTok Ads, Reels &amp; Shorts.</p>
+      </div>
+
+      <div class="video-grid-3">
+
+        <!-- Video 1: Gaia Herbs -->
+        <article class="video-card" data-video-card>
+          <div class="video-viewport" onclick="handleVideoToggle(this)">
+            <div class="video-top-badges">
+              <span class="badge-angle">Morning Routine</span>
+              <span class="badge-duration">0:10</span>
+            </div>
+            <video playsinline loop preload="metadata" poster="assets/images/photo_hero_gaia.jpg">
+              <source src="assets/videos/video_01_gaia_herbs.mp4" type="video/mp4">
             </video>
-            <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10 pointer-events-none">
-              <span class="font-mono text-[11px] text-marineGold font-bold">02 &bull; MEN'S GROOMING</span>
+            <div class="video-play-layer">
+              <div class="play-trigger-circle">
+                <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+            </div>
+            <div class="video-bottom-hud">
+              <span class="audio-indicator">
+                <span class="material-symbols-outlined" style="font-size: 12px;">volume_up</span> Tap to Listen
+              </span>
             </div>
           </div>
-          <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <h3 class="font-display font-bold text-base text-white">Creed Aventus Luxury GRWM</h3>
-              <p class="text-xs text-gray-400 mt-1">Morning bathroom GRWM routine, direct creator-to-camera hook, macro bottle flacon detail, direct application, and natural room acoustics.</p>
-            </div>
-            <div class="pt-2 border-t border-slateBorder flex items-center justify-between text-[11px] font-mono text-gray-400">
-              <span>9:16 Vertical &bull; 20s</span>
-              <span class="text-marineGold">High-Conviction Review</span>
-            </div>
+          <div class="video-meta-body">
+            <h4 class="video-campaign-title">Gaia Herbs Wellness</h4>
+            <p class="video-hook-snippet">Daily founder morning routine, honest capsule demo &amp; clean water pour.</p>
+            <div class="video-tag-strip">Supplements / Health</div>
           </div>
-        </div>
+        </article>
 
-        <!-- Video 03 -->
-        <div class="video-card bg-slateCard border border-slateBorder rounded-2xl overflow-hidden flex flex-col">
-          <div class="relative aspect-[9/16] bg-black">
-            <video id="vid-3" class="w-full h-full object-cover" playsinline preload="metadata" poster="assets/images/poster_odyssey_commercial.jpg" controls>
-              <source src="assets/videos/03_odyssey_commercial_chopped_20s.mp4" type="video/mp4">
+        <!-- Video 2: Creed Cologne -->
+        <article class="video-card" data-video-card>
+          <div class="video-viewport" onclick="handleVideoToggle(this)">
+            <div class="video-top-badges">
+              <span class="badge-angle">GRWM Review</span>
+              <span class="badge-duration">0:20</span>
+            </div>
+            <video playsinline loop preload="metadata" poster="assets/images/photo_hero_creed.jpg">
+              <source src="assets/videos/video_02_creed_cologne.mp4" type="video/mp4">
             </video>
-            <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10 pointer-events-none">
-              <span class="font-mono text-[11px] text-electricCyan font-bold">03 &bull; COMMERCIAL ENERGY</span>
+            <div class="video-play-layer">
+              <div class="play-trigger-circle">
+                <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+            </div>
+            <div class="video-bottom-hud">
+              <span class="audio-indicator">
+                <span class="material-symbols-outlined" style="font-size: 12px;">volume_up</span> Tap to Listen
+              </span>
             </div>
           </div>
-          <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <h3 class="font-display font-bold text-base text-white">Odyssey Functional Mushroom Elixir</h3>
-              <p class="text-xs text-gray-400 mt-1">Dark stage commercial showcasing all 3 flavor cans, high-speed macro pull-tab whip pans, carbonation fizz, and custom 808 soundscape.</p>
-            </div>
-            <div class="pt-2 border-t border-slateBorder flex items-center justify-between text-[11px] font-mono text-gray-400">
-              <span>9:16 Vertical &bull; 20s</span>
-              <span class="text-electricCyan">Commercial Ad Cut</span>
-            </div>
+          <div class="video-meta-body">
+            <h4 class="video-campaign-title">Creed Aventus Luxury</h4>
+            <p class="video-hook-snippet">Atomizer spritz macro, collar dab, executive dressing room luxury review.</p>
+            <div class="video-tag-strip">Men's Grooming / Luxury</div>
           </div>
-        </div>
+        </article>
 
-        <!-- Video 04 -->
-        <div class="video-card bg-slateCard border border-slateBorder rounded-2xl overflow-hidden flex flex-col">
-          <div class="relative aspect-[9/16] bg-black">
-            <video id="vid-4" class="w-full h-full object-cover" playsinline preload="metadata" poster="assets/images/poster_las_olas_pitch.jpg" controls>
-              <source src="assets/videos/04_las_olas_cafe_pitch_15s.mp4" type="video/mp4">
+        <!-- Video 3: Odyssey Mushroom Elixir Commercial (CORRECTED PREVIEW POSTER) -->
+        <article class="video-card" data-video-card>
+          <div class="video-viewport" onclick="handleVideoToggle(this)">
+            <div class="video-top-badges">
+              <span class="badge-angle">Kinetic Commercial</span>
+              <span class="badge-duration">0:20</span>
+            </div>
+            <video playsinline loop preload="metadata" poster="assets/images/poster_odyssey_commercial.jpg">
+              <source src="assets/videos/video_03_odyssey_commercial.mp4" type="video/mp4">
             </video>
-            <div class="absolute top-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10 pointer-events-none">
-              <span class="font-mono text-[11px] text-emeraldGrowth font-bold">04 &bull; FOUNDER PITCH</span>
-            </div>
-          </div>
-          <div class="p-4 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <h3 class="font-display font-bold text-base text-white">Las Olas Outdoor Creator Pitch</h3>
-              <p class="text-xs text-gray-400 mt-1">Outdoor Fort Lauderdale cafe pitch—natural South Florida daylight, conversational handheld phone delivery, and direct authority.</p>
-            </div>
-            <div class="pt-2 border-t border-slateBorder flex items-center justify-between text-[11px] font-mono text-gray-400">
-              <span>9:16 Vertical &bull; 15s</span>
-              <span class="text-emeraldGrowth">Handheld Native</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. High-Resolution Photo Gallery (Lifestyle & Commercial Macro) -->
-  <section id="photos" class="py-16 sm:py-20 border-b border-slateBorder">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
-      
-      <!-- Section A: Lifestyle & Creator Stills -->
-      <div>
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-          <div>
-            <span class="font-mono text-xs uppercase tracking-widest text-marineGold block mb-2">02 // Creator &amp; Product Integration</span>
-            <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white">High-Resolution Lifestyle Stills</h2>
-          </div>
-          <p class="text-sm text-gray-400 max-w-md">
-            Authentic product-in-hand photography across South Florida settings—kitchen island, gym turf, executive lounge, and outdoor coastal sun.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <div class="bg-slateCard border border-slateBorder rounded-2xl overflow-hidden group">
-            <div class="aspect-square overflow-hidden">
-              <img src="assets/images/ugc_photo_gaia_nano_banana_winner.jpg" alt="Gaia Herbs Kitchen Island" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            </div>
-            <div class="p-3.5">
-              <p class="font-display font-bold text-sm text-white">Kitchen Island Morning Wellness</p>
-              <p class="text-xs text-gray-400">Daily supplement &amp; nutrition staging</p>
-            </div>
-          </div>
-
-          <div class="bg-slateCard border border-slateBorder rounded-2xl overflow-hidden group">
-            <div class="aspect-square overflow-hidden">
-              <img src="assets/images/ugc_photo_odyssey_nano_banana_medium_winner.jpg" alt="Odyssey Energy Gym Turf" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            </div>
-            <div class="p-3.5">
-              <p class="font-display font-bold text-sm text-white">Athletic Turf &amp; Plyo Box</p>
-              <p class="text-xs text-gray-400">Pre-workout &amp; functional beverage</p>
-            </div>
-          </div>
-
-          <div class="bg-slateCard border border-slateBorder rounded-2xl overflow-hidden group">
-            <div class="aspect-square overflow-hidden">
-              <img src="assets/images/ugc_photo_creed_nano_banana_winner.jpg" alt="Creed Cologne Studio Lounge" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            </div>
-            <div class="p-3.5">
-              <p class="font-display font-bold text-sm text-white">Executive Lounge &amp; Grooming</p>
-              <p class="text-xs text-gray-400">Luxury fragrance &amp; men's lifestyle</p>
-            </div>
-          </div>
-
-          <div class="bg-slateCard border border-slateBorder rounded-2xl overflow-hidden group">
-            <div class="aspect-square overflow-hidden">
-              <img src="assets/images/ugc_photo_shaker_nano_banana_winner.jpg" alt="Stainless Shaker Turf" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-            </div>
-            <div class="p-3.5">
-              <p class="font-display font-bold text-sm text-white">Outdoor Fitness &amp; Hydration</p>
-              <p class="text-xs text-gray-400">Active training &amp; gear showcase</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Section B: Commercial Macro B-Roll -->
-      <div>
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-          <div>
-            <span class="font-mono text-xs uppercase tracking-widest text-electricCyan block mb-2">03 // Studio &amp; Environmental Product Macros</span>
-            <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white">Commercial Macro B-Roll Stills</h2>
-          </div>
-          <p class="text-sm text-gray-400 max-w-md">
-            Crisp textures, condensation droplets, capsule pours, and EDC flat-lays built for paid social carousels and PDP galleries.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-          <div class="bg-slateCard border border-slateBorder rounded-xl overflow-hidden">
-            <img src="assets/images/macro_01_odyssey_mat.jpg" alt="Chilled Can Condensation" class="w-full aspect-square object-cover">
-            <p class="p-2.5 text-[11px] font-mono text-gray-300 truncate">Chilled Can Macro</p>
-          </div>
-          <div class="bg-slateCard border border-slateBorder rounded-xl overflow-hidden">
-            <img src="assets/images/macro_02_gaia_uncap.jpg" alt="Marble Island Capsule Uncap" class="w-full aspect-square object-cover">
-            <p class="p-2.5 text-[11px] font-mono text-gray-300 truncate">Marble Bottle Uncap</p>
-          </div>
-          <div class="bg-slateCard border border-slateBorder rounded-xl overflow-hidden">
-            <img src="assets/images/macro_03_creed_tray.jpg" alt="Walnut Valet Tray EDC" class="w-full aspect-square object-cover">
-            <p class="p-2.5 text-[11px] font-mono text-gray-300 truncate">Valet Tray &amp; EDC</p>
-          </div>
-          <div class="bg-slateCard border border-slateBorder rounded-xl overflow-hidden">
-            <img src="assets/images/macro_04_odyssey_court.jpg" alt="Court Sidelines POV" class="w-full aspect-square object-cover">
-            <p class="p-2.5 text-[11px] font-mono text-gray-300 truncate">Court Sidelines POV</p>
-          </div>
-          <div class="bg-slateCard border border-slateBorder rounded-xl overflow-hidden">
-            <img src="assets/images/macro_05_gaia_flatlay.jpg" alt="Oak Desk Morning Flatlay" class="w-full aspect-square object-cover">
-            <p class="p-2.5 text-[11px] font-mono text-gray-300 truncate">Oak Desk Flat-Lay</p>
-          </div>
-          <div class="bg-slateCard border border-slateBorder rounded-xl overflow-hidden">
-            <img src="assets/images/macro_gaia_capsule_spill.jpg" alt="Capsule Dosage Detail" class="w-full aspect-square object-cover">
-            <p class="p-2.5 text-[11px] font-mono text-gray-300 truncate">Capsule Dosage Macro</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Official Comp Card -->
-      <div id="compcard" class="pt-4">
-        <div class="bg-slateCard border border-slateBorder rounded-2xl p-6 sm:p-8">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-            <div>
-              <span class="font-mono text-xs uppercase tracking-widest text-marineGold block mb-1">04 // Agency Composite Card</span>
-              <h3 class="font-display font-extrabold text-xl sm:text-2xl text-white">Official Creator &amp; Talent Comp Card</h3>
-            </div>
-            <a href="assets/images/SHAWN_MCADAM_AGENCY_COMP_CARD.png" download class="inline-flex items-center gap-2 bg-obsidian hover:bg-slateHover text-marineGold border border-marineGold/40 font-mono text-xs px-4 py-2.5 rounded-lg transition">
-              Download High-Res Comp Card (PNG)
-            </a>
-          </div>
-          <div class="rounded-xl overflow-hidden border border-slateBorder">
-            <img src="assets/images/SHAWN_MCADAM_AGENCY_COMP_CARD.png" alt="Shawn McAdam Official Comp Card" class="w-full h-auto block">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 5. Professional UGC Pricing & Licensing Matrix -->
-  <section id="pricing" class="py-16 sm:py-20 border-b border-slateBorder">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
-      <div class="text-center max-w-3xl mx-auto">
-        <span class="font-mono text-xs uppercase tracking-widest text-emeraldGrowth block mb-2">05 // Transparent Production &amp; Ad Licensing</span>
-        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">Performance Ad Bundles &amp; Production Rates</h2>
-        <p class="text-sm sm:text-base text-gray-400 mt-3">
-          Every package includes concept development, direct-response scriptwriting, 4K vertical filming, tight retention editing, sound design, and color grading.
-        </p>
-      </div>
-
-      <!-- Performance Ad Bundles (Featured 3-Card Row) -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        <!-- Single Video / Starter -->
-        <div class="bg-slateCard border border-slateBorder rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="font-mono text-xs uppercase text-gray-400">Base Production</span>
-              <span class="font-mono text-xs px-2.5 py-1 rounded bg-white/5 text-gray-300">1–5 Videos</span>
-            </div>
-            <h3 class="font-display font-bold text-xl text-white">Direct-Response Video Packs</h3>
-            <p class="text-xs text-gray-400 mt-1 mb-6">Full script-to-final-cut vertical video production (15–45s) with organic social usage included.</p>
-
-            <div class="space-y-3 border-t border-slateBorder pt-4 text-sm">
-              <div class="flex items-center justify-between py-2 border-b border-slateBorder/60">
-                <div>
-                  <p class="font-semibold text-white">Single Video Asset</p>
-                  <p class="text-xs text-gray-400">1 Hook + 1 Body + 1 CTA &bull; 1 Revision</p>
-                </div>
-                <span class="font-mono font-bold text-lg text-white">$150</span>
-              </div>
-              <div class="flex items-center justify-between py-2 border-b border-slateBorder/60">
-                <div>
-                  <p class="font-semibold text-white">3-Video Starter Pack</p>
-                  <p class="text-xs text-gray-400">3 distinct concepts (15% off) &bull; 2 Revisions</p>
-                </div>
-                <span class="font-mono font-bold text-lg text-white">$380</span>
-              </div>
-              <div class="flex items-center justify-between py-2">
-                <div>
-                  <p class="font-semibold text-white">5-Video Scale Pack</p>
-                  <p class="text-xs text-gray-400">5 distinct concepts (20% off) &bull; 2 Revisions</p>
-                </div>
-                <span class="font-mono font-bold text-lg text-white">$600</span>
+            <div class="video-play-layer">
+              <div class="play-trigger-circle">
+                <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               </div>
             </div>
+            <div class="video-bottom-hud">
+              <span class="audio-indicator">
+                <span class="material-symbols-outlined" style="font-size: 12px;">volume_up</span> Tap to Listen
+              </span>
+            </div>
           </div>
+          <div class="video-meta-body">
+            <h4 class="video-campaign-title">Odyssey Elixir Commercial</h4>
+            <p class="video-hook-snippet">Dark stage condensation tab crack, heavy cold bass beat, clean cinematic cut.</p>
+            <div class="video-tag-strip">RTD Energy / Beverage</div>
+          </div>
+        </article>
 
-          <button onclick="selectPackage('3-Video Starter Pack ($380)')" class="mt-8 w-full py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-display font-bold text-sm transition">
-            Select Base Video Pack
-          </button>
+      </div>
+    </section>
+
+    <!-- Section 4: Expanded Commercial Stills Gallery (14 Assets, Las Olas Removed) -->
+    <section class="photo-showcase" id="stills">
+      <div class="section-head">
+        <h3 class="section-title">Expanded Creative Portfolio</h3>
+        <p class="section-desc">Tap any image to expand into full-screen preview. Complete library of product macros, lifestyle framing, and character anchors.</p>
+      </div>
+
+      <div class="photo-filter-bar">
+        <button class="photo-tab-btn active" onclick="filterPhotoCategory('all')">All Assets (14)</button>
+        <button class="photo-tab-btn" onclick="filterPhotoCategory('hero')">Hero Lifestyle (5)</button>
+        <button class="photo-tab-btn" onclick="filterPhotoCategory('macro')">Commercial Macro (6)</button>
+        <button class="photo-tab-btn" onclick="filterPhotoCategory('anchor')">Character Anchors (3)</button>
+      </div>
+
+      <div class="photo-grid" id="stillsGrid">
+
+        <!-- Still 1: Gaia Herbs Counter Lifestyle -->
+        <div class="photo-card" data-cat="hero" onclick="showLightbox('assets/images/photo_hero_gaia.jpg', 'Gaia Herbs Morning Counter Staging')">
+          <img src="assets/images/photo_hero_gaia.jpg" alt="Gaia Herbs Morning Counter Staging" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Gaia Herbs Kitchen Routine</div>
+          </div>
         </div>
 
-        <!-- Hook-Testing Ad Pack (Most Popular) -->
-        <div class="bg-gradient-to-b from-slateHover to-slateCard border-2 border-marineGold rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative gold-glow">
-          <div class="absolute -top-3.5 left-6 bg-marineGold text-black font-mono font-bold text-[11px] uppercase px-3 py-1 rounded-full tracking-wider">
-            Most Popular For Media Buyers
+        <!-- Still 2: Odyssey Elixir Gym Lifestyle -->
+        <div class="photo-card" data-cat="hero" onclick="showLightbox('assets/images/photo_hero_odyssey.jpg', 'Odyssey Elixir Gym Bench Grip')">
+          <img src="assets/images/photo_hero_odyssey.jpg" alt="Odyssey Elixir Gym Bench Grip" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Odyssey Elixir Gym Bench Grip</div>
           </div>
-          <div>
-            <div class="flex items-center justify-between mb-4 mt-1">
-              <span class="font-mono text-xs uppercase text-marineGold">Performance Ad Testing</span>
-              <span class="font-mono text-xs px-2.5 py-1 rounded bg-marineGold/15 text-marineGold">6 Ad Variations</span>
-            </div>
-            <h3 class="font-display font-bold text-2xl text-white">Hook-Testing Ad Pack</h3>
-            <div class="mt-3 mb-5 flex items-baseline gap-2">
-              <span class="font-mono font-extrabold text-4xl text-white">$275</span>
-              <span class="text-xs font-mono text-gray-400">/ complete testing bundle</span>
-            </div>
-            <p class="text-xs text-gray-300 mb-6">Engineered to find winning scroll-stoppers fast on Meta Reels and TikTok Ads without burning media budget.</p>
-
-            <ul class="space-y-2.5 text-xs sm:text-sm text-gray-200 border-t border-slateBorder pt-4">
-              <li class="flex items-center gap-2.5"><span class="text-emeraldGrowth font-bold">&#10003;</span> 1 High-Conviction Core Body Concept</li>
-              <li class="flex items-center gap-2.5"><span class="text-emeraldGrowth font-bold">&#10003;</span> 3 Distinct Scroll-Stopping 3s Hooks</li>
-              <li class="flex items-center gap-2.5"><span class="text-emeraldGrowth font-bold">&#10003;</span> 2 Direct Call-To-Action (CTA) Endings</li>
-              <li class="flex items-center gap-2.5"><span class="text-emeraldGrowth font-bold">&#10003;</span> 6 Total Ready-to-Launch Ad Variations</li>
-              <li class="flex items-center gap-2.5"><span class="text-emeraldGrowth font-bold">&#10003;</span> 30 Days Paid Ad Usage Rights Included</li>
-              <li class="flex items-center gap-2.5"><span class="text-emeraldGrowth font-bold">&#10003;</span> 2 Full Revision Rounds Included</li>
-            </ul>
-          </div>
-
-          <button onclick="selectPackage('Hook-Testing Ad Pack ($275)')" class="mt-8 w-full py-3.5 rounded-xl bg-marineGold hover:bg-amber-400 text-black font-display font-extrabold text-sm transition">
-            Book Hook-Testing Pack ($275)
-          </button>
         </div>
 
-        <!-- Multi-Angle & Monthly Retainer -->
-        <div class="bg-slateCard border border-slateBorder rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <span class="font-mono text-xs uppercase text-electricCyan">Scale &amp; Retainers</span>
-              <span class="font-mono text-xs px-2.5 py-1 rounded bg-electricCyan/15 text-electricCyan">Paid Rights Included</span>
-            </div>
-            <h3 class="font-display font-bold text-xl text-white">Multi-Angle &amp; Monthly Scale</h3>
-            <p class="text-xs text-gray-400 mt-1 mb-6">Built for DTC brands refreshing creative bi-weekly or monthly to beat ad fatigue.</p>
-
-            <div class="space-y-4 border-t border-slateBorder pt-4 text-sm">
-              <div class="p-3.5 rounded-xl bg-obsidian border border-slateBorder">
-                <div class="flex items-center justify-between">
-                  <span class="font-display font-bold text-white">Multi-Angle Testing Pack</span>
-                  <span class="font-mono font-bold text-lg text-electricCyan">$495</span>
-                </div>
-                <p class="text-xs text-gray-400 mt-1">3 Unique Angle Concepts + 2 Hooks each (6 total ad variations) + 60 Days Paid Ad Rights + 2 Revisions.</p>
-              </div>
-
-              <div class="p-3.5 rounded-xl bg-obsidian border border-emeraldGrowth/40">
-                <div class="flex items-center justify-between">
-                  <span class="font-display font-bold text-white">Monthly Growth Retainer</span>
-                  <span class="font-mono font-bold text-lg text-emeraldGrowth">$850/mo</span>
-                </div>
-                <p class="text-xs text-gray-400 mt-1">4 New Video Concepts / month + 2 Hooks each (8 finished ad variations / mo) + Ongoing Paid Ad Rights + Priority Queue.</p>
-              </div>
-            </div>
+        <!-- Still 3: Creed Aventus Grooming -->
+        <div class="photo-card" data-cat="hero" onclick="showLightbox('assets/images/photo_hero_creed.jpg', 'Creed Aventus Executive Dressing')">
+          <img src="assets/images/photo_hero_creed.jpg" alt="Creed Aventus Executive Dressing" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Creed Aventus Executive Review</div>
           </div>
+        </div>
 
-          <button onclick="selectPackage('Growth Retainer ($850/mo)')" class="mt-8 w-full py-3 rounded-xl bg-emeraldGrowth hover:bg-emerald-400 text-black font-display font-bold text-sm transition">
-            Book Monthly Growth Retainer
-          </button>
+        <!-- Still 4: Fitness Shaker Hero -->
+        <div class="photo-card" data-cat="hero" onclick="showLightbox('assets/images/photo_hero_shaker.jpg', 'Fitness Shaker Turf Hero')">
+          <img src="assets/images/photo_hero_shaker.jpg" alt="Fitness Shaker Turf Hero" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Matte Black Shaker Bottle Hero</div>
+          </div>
+        </div>
+
+        <!-- Still 5: Odyssey Dark Stage Trio -->
+        <div class="photo-card" data-cat="hero" onclick="showLightbox('assets/images/poster_odyssey_commercial.jpg', 'Odyssey Dark Stage Commercial Trio')">
+          <img src="assets/images/poster_odyssey_commercial.jpg" alt="Odyssey Dark Stage Commercial Trio" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Odyssey Dark Stage Lineup</div>
+          </div>
+        </div>
+
+        <!-- Still 6: Basketball Court Sidelines -->
+        <div class="photo-card" data-cat="macro" onclick="showLightbox('assets/images/macro_04_odyssey_court.jpg', 'Odyssey Blue Raspberry Basketball Court Sidelines')">
+          <img src="assets/images/macro_04_odyssey_court.jpg" alt="Odyssey Blue Raspberry Basketball Court Sidelines" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Odyssey Court Sidelines &amp; Bag</div>
+          </div>
+        </div>
+
+        <!-- Still 7: Odyssey Mat Macro -->
+        <div class="photo-card" data-cat="macro" onclick="showLightbox('assets/images/macro_01_odyssey_mat.jpg', 'Odyssey Can Macro Chilled Droplet Texture')">
+          <img src="assets/images/macro_01_odyssey_mat.jpg" alt="Odyssey Can Macro Chilled Droplet Texture" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Odyssey Chilled Droplet Texture</div>
+          </div>
+        </div>
+
+        <!-- Still 8: Gaia Amber Dropper Uncap -->
+        <div class="photo-card" data-cat="macro" onclick="showLightbox('assets/images/macro_02_gaia_uncap.jpg', 'Gaia Amber Bottle Dropper Uncap Detail')">
+          <img src="assets/images/macro_02_gaia_uncap.jpg" alt="Gaia Amber Bottle Dropper Uncap Detail" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Gaia Amber Glass Dropper Uncap</div>
+          </div>
+        </div>
+
+        <!-- Still 9: Creed Marble Tray Detail -->
+        <div class="photo-card" data-cat="macro" onclick="showLightbox('assets/images/macro_03_creed_tray.jpg', 'Creed Aventus Glass & Marble Valet Tray')">
+          <img src="assets/images/macro_03_creed_tray.jpg" alt="Creed Aventus Glass & Marble Valet Tray" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Creed Glass &amp; Marble Valet Tray</div>
+          </div>
+        </div>
+
+        <!-- Still 10: Gaia Botanical Flatlay -->
+        <div class="photo-card" data-cat="macro" onclick="showLightbox('assets/images/macro_05_gaia_flatlay.jpg', 'Gaia Herbs Botanical Flatlay with Mug')">
+          <img src="assets/images/macro_05_gaia_flatlay.jpg" alt="Gaia Herbs Botanical Flatlay with Mug" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Gaia Herbs Botanical Flatlay</div>
+          </div>
+        </div>
+
+        <!-- Still 11: Gaia Capsule Spill Macro -->
+        <div class="photo-card" data-cat="macro" onclick="showLightbox('assets/images/macro_gaia_capsule_spill.jpg', 'Gaia Herbs Liquid Phyto-Capsules Spill Macro')">
+          <img src="assets/images/macro_gaia_capsule_spill.jpg" alt="Gaia Herbs Liquid Phyto-Capsules Spill Macro" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Gaia Phyto-Capsules Spill Detail</div>
+          </div>
+        </div>
+
+        <!-- Still 12: Character Anchor - Golden Hour Sun -->
+        <div class="photo-card" data-cat="anchor" onclick="showLightbox('assets/images/shawn_avatar_sun_rooftop.jpg', 'Shawn McAdam Golden Hour Sun Anchor')">
+          <img src="assets/images/shawn_avatar_sun_rooftop.jpg" alt="Shawn McAdam Golden Hour Sun Anchor" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Golden Hour Sun Anchor</div>
+          </div>
+        </div>
+
+        <!-- Still 13: Character Anchor - Truck Cabin -->
+        <div class="photo-card" data-cat="anchor" onclick="showLightbox('assets/images/shawn_anchor_truck_cabin.jpg', 'Shawn McAdam Truck Cabin Grip Anchor')">
+          <img src="assets/images/shawn_anchor_truck_cabin.jpg" alt="Shawn McAdam Truck Cabin Grip Anchor" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Leather Truck Cabin Anchor</div>
+          </div>
+        </div>
+
+        <!-- Still 14: Character Anchor - Executive Armchair -->
+        <div class="photo-card" data-cat="anchor" onclick="showLightbox('assets/images/shawn_profile_avatar.jpg', 'Shawn McAdam Cognac Leather Armchair Anchor')">
+          <img src="assets/images/shawn_profile_avatar.jpg" alt="Shawn McAdam Cognac Leather Armchair Anchor" loading="lazy">
+          <div class="photo-card-info">
+            <div class="photo-title">Cognac Armchair Executive</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Transparent Rates & Packages -->
+    <section class="rates-section" id="rates">
+      <div class="section-head">
+        <h3 class="section-title">Transparent Rate Card</h3>
+        <p class="section-desc">Priced on creative labor and commercial ad value. 1 revision for single assets; 2 full revisions on all packs.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Tier 1: Single Video -->
+        <div class="pricing-card">
+          <div class="tier-name">Single Concept Video</div>
+          <div class="tier-target">Test a single direct response angle</div>
+          <div class="price-wrap">
+            <span class="price-value">$150</span>
+            <span class="price-term">/ flat</span>
+          </div>
+          <div class="revision-badge">1 Revision Round Included</div>
+          <ul class="tier-features">
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              1 Script / Concept execution (up to 60s)
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              Full editing, pacing &amp; native music/SFX
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              Standard 90-day organic brand usage rights
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              3–5 business day delivery
+            </li>
+          </ul>
+          <a href="#collab" class="tier-btn tier-btn-outline" onclick="preselectTier('Single Video ($150)')">Select Single</a>
+        </div>
+
+        <!-- Tier 2: Hook Testing Pack (Featured) -->
+        <div class="pricing-card featured">
+          <span class="popular-pill">Highest ROAS</span>
+          <div class="tier-name">Hook Testing Pack</div>
+          <div class="tier-target">A/B testing creative variations for paid ads</div>
+          <div class="price-wrap">
+            <span class="price-value">$275</span>
+            <span class="price-term">/ flat</span>
+          </div>
+          <div class="revision-badge">2 Full Revision Rounds</div>
+          <ul class="tier-features">
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              <strong>1 Master Body Video + 3 Distinct Hooks</strong>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              Delivers 3 complete ad variations for Meta/TikTok
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              2 Call-to-Action (CTA) variations included
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              Includes 2 full revision rounds
+            </li>
+          </ul>
+          <a href="#collab" class="tier-btn tier-btn-solid" onclick="preselectTier('Hook Testing Pack ($275)')">Select Testing Pack</a>
+        </div>
+
+        <!-- Tier 3: Monthly Retainer -->
+        <div class="pricing-card">
+          <div class="tier-name">Monthly Growth Retainer</div>
+          <div class="tier-target">Consistent high-volume ad creative pipeline</div>
+          <div class="price-wrap">
+            <span class="price-value">$850</span>
+            <span class="price-term">/ month</span>
+          </div>
+          <div class="revision-badge">2 Revisions Per Asset</div>
+          <ul class="tier-features">
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              <strong>6 Videos + 8 Hook Variations / Month</strong>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              5 High-resolution product stills included
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              Full raw footage &amp; B-roll access included
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+              Priority Slack communication &amp; dedicated turnaround
+            </li>
+          </ul>
+          <a href="#collab" class="tier-btn tier-btn-outline" onclick="preselectTier('Monthly Growth Retainer ($850/mo)')">Lock Monthly Retainer</a>
         </div>
 
       </div>
 
-      <!-- Photography & Licensing Sub-Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-slateCard border border-slateBorder rounded-2xl p-6">
-          <h4 class="font-display font-bold text-lg text-white mb-1">UGC &amp; Commercial Product Photography</h4>
-          <p class="text-xs text-gray-400 mb-4">High-resolution product styling, macro B-roll, and creator lifestyle imagery.</p>
-          <div class="space-y-2.5 text-xs sm:text-sm">
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>Single Photo Asset (1 Revision)</span><span class="font-mono font-bold text-white">$45</span></div>
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>Quick Shot Pack (3 Edited Photos across distinct angles)</span><span class="font-mono font-bold text-white">$95</span></div>
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>Brand Showcase Pack (6 Edited Photos across settings)</span><span class="font-mono font-bold text-white">$175</span></div>
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>Carousel &amp; E-Commerce Pack (10 Edited Photos)</span><span class="font-mono font-bold text-white">$275</span></div>
-            <div class="flex justify-between py-1.5 text-marineGold"><span>Photo Add-On (Add 3 edited photos to any video order)</span><span class="font-mono font-bold">+$50</span></div>
+      <!-- Add-ons Matrix Strip -->
+      <div class="addons-wrapper">
+        <div class="addons-head">A La Carte Add-ons &amp; Usage Rights</div>
+        <div class="addons-grid">
+          <div class="addon-card">
+            <div class="addon-name">Additional Hooks</div>
+            <div class="addon-price">+$40 / hook</div>
+            <div class="addon-info">3-second visual + audio intro hooks for A/B testing</div>
           </div>
-        </div>
-
-        <div class="bg-slateCard border border-slateBorder rounded-2xl p-6">
-          <h4 class="font-display font-bold text-lg text-white mb-1">Paid Media Licensing &amp; Production Add-Ons</h4>
-          <p class="text-xs text-gray-400 mb-4">Transparent usage terms for dark posting, whitelisting, and raw footage.</p>
-          <div class="space-y-2.5 text-xs sm:text-sm">
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>Organic Social Use (Brand Feeds)</span><span class="font-mono font-bold text-emeraldGrowth">Included Free</span></div>
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>30-Day / 90-Day Paid Ad Rights</span><span class="font-mono font-bold text-white">+30% / +50%</span></div>
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>1-Year / Lifetime Buyout Paid Ad Rights</span><span class="font-mono font-bold text-white">+80% / +120%</span></div>
-            <div class="flex justify-between py-1.5 border-b border-slateBorder"><span>Spark Ads / Whitelisting (From Shawn's Handles)</span><span class="font-mono font-bold text-white">+$100 / mo</span></div>
-            <div class="flex justify-between py-1.5 text-electricCyan"><span>Additional Hook (+$40) &bull; Raw Footage (+30%) &bull; 48h Rush (+40%)</span><span class="font-mono font-bold">Available</span></div>
+          <div class="addon-card">
+            <div class="addon-name">Raw Footage Access</div>
+            <div class="addon-price">+30% of base</div>
+            <div class="addon-info">Unedited video clips &amp; reaction B-roll for your team</div>
+          </div>
+          <div class="addon-card">
+            <div class="addon-name">Paid Ad Usage (90d)</div>
+            <div class="addon-price">+30% of base</div>
+            <div class="addon-info">Meta, TikTok &amp; YouTube Ads commercial license</div>
+          </div>
+          <div class="addon-card">
+            <div class="addon-name">Commercial Stills</div>
+            <div class="addon-price">$95 (3-pk) / $175 (5-pk)</div>
+            <div class="addon-info">Includes 2 full revisions per pack (Single: $45)</div>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Section 6: Direct Booking & Fast Intake -->
+    <section class="booking-section" id="collab">
+      <div class="section-head">
+        <h3 class="section-title">Book Shawn for Your Next Ad Run</h3>
+        <p class="section-desc">Fill out your project details below or contact Shawn directly. Average response time under 2 hours.</p>
+      </div>
 
-  <!-- 6. Direct Booking & Brief Inquiry Form -->
-  <section id="contact" class="py-16 sm:py-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-slateCard border border-slateBorder rounded-3xl p-6 sm:p-10 gold-glow">
-        <div class="text-center max-w-xl mx-auto mb-8">
-          <span class="font-mono text-xs uppercase tracking-widest text-marineGold block mb-2">06 // Direct Booking &amp; Brief Dispatch</span>
-          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white">Lock In Your Creative Shoot</h2>
-          <p class="text-sm text-gray-400 mt-2">
-            Submit your project details below or reach out directly by phone or email. Shawn replies within 2 business hours.
-          </p>
-        </div>
-
-        <form id="briefForm" onsubmit="submitBrief(event)" class="space-y-5">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="block text-xs font-mono uppercase text-gray-300 mb-1.5">Brand Name &amp; Industry *</label>
-              <input type="text" id="brandName" required placeholder="e.g. Apex Nutrition / Supplements" class="w-full rounded-xl bg-obsidian border border-slateBorder px-4 py-3 text-sm text-white focus:outline-none focus:border-marineGold">
+      <div class="booking-box">
+        <form id="collabForm" onsubmit="submitCollabForm(event)">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="companyInput">Brand / Company Name</label>
+              <input type="text" id="companyInput" class="form-input" placeholder="e.g. Odyssey Elixir" required>
             </div>
-            <div>
-              <label class="block text-xs font-mono uppercase text-gray-300 mb-1.5">Contact Name &amp; Work Email *</label>
-              <input type="email" id="contactEmail" required placeholder="you@brand.com" class="w-full rounded-xl bg-obsidian border border-slateBorder px-4 py-3 text-sm text-white focus:outline-none focus:border-marineGold">
+            <div class="form-group">
+              <label for="emailInput">Work Email</label>
+              <input type="email" id="emailInput" class="form-input" placeholder="growth@yourbrand.com" required>
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="block text-xs font-mono uppercase text-gray-300 mb-1.5">Package Selection *</label>
-              <select id="packageSelect" class="w-full rounded-xl bg-obsidian border border-slateBorder px-4 py-3 text-sm text-white focus:outline-none focus:border-marineGold">
-                <option value="Hook-Testing Ad Pack ($275)">Hook-Testing Ad Pack ($275) — Most Popular</option>
-                <option value="Single Video Asset ($150)">Single Video Asset ($150)</option>
-                <option value="3-Video Starter Pack ($380)">3-Video Starter Pack ($380)</option>
-                <option value="Multi-Angle Testing Pack ($495)">Multi-Angle Testing Pack ($495)</option>
-                <option value="5-Video Scale Pack ($600)">5-Video Scale Pack ($600)</option>
-                <option value="Growth Retainer ($850/mo)">Monthly Growth Retainer ($850/mo)</option>
-                <option value="UGC Photography Pack ($95-$275)">UGC Photography Pack ($95–$275)</option>
-                <option value="Custom Campaign / Live Selling">Custom Campaign / Live Selling</option>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="tierDropdown">Desired Package</label>
+              <select id="tierDropdown" class="form-input">
+                <option value="Single Video ($150)">Single Concept Video ($150) - 1 Revision</option>
+                <option value="Hook Testing Pack ($275)" selected>Hook Testing Pack ($275) - 2 Revisions</option>
+                <option value="3-Video Bundle ($380)">3-Video Bundle ($380) - 2 Revisions</option>
+                <option value="5-Video Performance ($600)">5-Video Performance ($600) - 2 Revisions</option>
+                <option value="Monthly Growth Retainer ($850/mo)">Monthly Growth Retainer ($850/mo)</option>
+                <option value="Photo Pack 5-Stills ($175)">Photo Pack 5-Stills ($175) - 2 Revisions</option>
+                <option value="Custom Campaign Request">Custom Campaign Request</option>
               </select>
             </div>
-            <div>
-              <label class="block text-xs font-mono uppercase text-gray-300 mb-1.5">Usage Rights Needed</label>
-              <select id="usageSelect" class="w-full rounded-xl bg-obsidian border border-slateBorder px-4 py-3 text-sm text-white focus:outline-none focus:border-marineGold">
-                <option value="30 Days Paid Ads (Included in Hook Pack)">30 Days Paid Ads</option>
-                <option value="Organic Social Only (Included Free)">Organic Social Only</option>
-                <option value="90 Days Paid Ads (+50%)">90 Days Paid Ads (+50%)</option>
-                <option value="1-Year Paid Ads (+80%)">1-Year Paid Ads (+80%)</option>
-                <option value="In-Perpetuity / Full Buyout (+120%)">In-Perpetuity / Full Buyout (+120%)</option>
-                <option value="Spark Ads / Whitelisting (+$100/mo)">Spark Ads / Whitelisting (+$100/mo)</option>
+            <div class="form-group">
+              <label for="timelineDropdown">Delivery Timeline</label>
+              <select id="timelineDropdown" class="form-input">
+                <option value="Standard 3-5 Business Days">Standard (3–5 Business Days)</option>
+                <option value="Rush 24-48 Hours (+40%)">Rush 24–48 Hours (+40%)</option>
+                <option value="Flexible / Next Month">Flexible / Next Month</option>
               </select>
             </div>
           </div>
 
-          <div>
-            <label class="block text-xs font-mono uppercase text-gray-300 mb-1.5">Product URL, Key Angle &amp; Timeline</label>
-            <textarea id="projectNotes" rows="3" placeholder="Share your product link, shipping timeline to Parkland FL, and any key pain points or hooks you want tested..." class="w-full rounded-xl bg-obsidian border border-slateBorder px-4 py-3 text-sm text-white focus:outline-none focus:border-marineGold"></textarea>
+          <div class="form-group">
+            <label for="detailsInput">Product Details &amp; Target Angle</label>
+            <textarea id="detailsInput" class="form-input" rows="3" placeholder="Tell me about your product, what problem it solves, and which angles or hooks you'd like to test..."></textarea>
           </div>
 
-          <button type="submit" class="w-full py-4 rounded-xl bg-emeraldGrowth hover:bg-emerald-400 text-black font-display font-extrabold text-base transition emerald-glow">
-            Send Project Brief to Shawn McAdam
-          </button>
-          <p id="formFeedback" class="hidden text-center text-xs font-mono text-emeraldGrowth pt-2">
-            Brief formatted! Opening your email client and copying details so Shawn receives it immediately.
-          </p>
+          <button type="submit" class="btn-submit-form" id="collabSubmitBtn">Send Collaboration Request</button>
+
+          <div id="collabStatus" class="form-feedback"></div>
         </form>
 
-        <!-- Direct Contact Bar -->
-        <div class="mt-8 pt-6 border-t border-slateBorder grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-          <a href="mailto:shawn.mcadam@gmail.com" class="p-3 rounded-xl bg-obsidian border border-slateBorder hover:border-marineGold transition">
-            <span class="block font-mono text-[11px] text-gray-400 uppercase">Direct Email</span>
-            <span class="font-mono text-xs sm:text-sm font-bold text-white">shawn.mcadam@gmail.com</span>
+        <div class="direct-links-wrap">
+          <a href="mailto:shawn.mcadam@gmail.com" class="direct-link-btn">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            shawn.mcadam@gmail.com
           </a>
-          <a href="tel:9543308737" class="p-3 rounded-xl bg-obsidian border border-slateBorder hover:border-marineGold transition">
-            <span class="block font-mono text-[11px] text-gray-400 uppercase">Call or Text Direct</span>
-            <span class="font-mono text-xs sm:text-sm font-bold text-marineGold">(954) 330-8737</span>
+          <a href="tel:+19543308737" class="direct-link-btn">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            (954) 330-8737
           </a>
-          <div class="p-3 rounded-xl bg-obsidian border border-slateBorder">
-            <span class="block font-mono text-[11px] text-gray-400 uppercase">Verified Channels</span>
-            <span class="font-mono text-xs font-bold text-electricCyan">@shawnfoundit &bull; @shawn.mc5</span>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="py-10 border-t border-slateBorder text-center text-xs text-gray-500 font-mono">
-    <p>&copy; 2026 Shawn McAdam (shawnmcadam.com) &bull; Direct-Response UGC &amp; Commercial Production &bull; Parkland &amp; Fort Lauderdale, FL</p>
+  </main>
+
+  <!-- Minimalist Footer: Icon-Only Socials (Names Hidden) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-social-icons">
+        <a href="https://instagram.com/shawn.mc5" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" title="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://tiktok.com/@shawnfoundit" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" title="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.32a6.33 6.33 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.5a8.28 8.28 0 0 0 4.88 1.6V6.69z"/></svg>
+        </a>
+        <a href="https://youtube.com/@sportscardconnection" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" title="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Shawn McAdam. All direct-response UGC rights reserved.</p>
+    </div>
   </footer>
 
+  <!-- Mobile Bottom Sticky Conversion Bar -->
+  <aside class="mobile-bottom-bar">
+    <div class="bar-price-info">
+      <div class="bar-price-sub">Starts at <strong>$150</strong></div>
+      <div class="bar-delivery-pill">&#9679; 3–5 Day Turnaround</div>
+    </div>
+    <div class="bar-actions">
+      <a href="tel:+19543308737" class="btn-bar-phone">
+        <svg style="width:14px;height:14px;fill:currentColor;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        Call / Text
+      </a>
+      <a href="#collab" class="btn-bar-cta">Book Shoot</a>
+    </div>
+  </aside>
+
+  <!-- Fullscreen Photo Lightbox Modal -->
+  <div id="photoLightbox" class="lightbox-modal" onclick="hideLightbox(event)">
+    <div class="lightbox-wrapper" onclick="event.stopPropagation()">
+      <button class="lightbox-close-btn" onclick="hideLightbox(event)">&times;</button>
+      <img id="lightboxTarget" src="" alt="Enlarged photo view">
+    </div>
+  </div>
+
   <script>
-    function selectPackage(pkgName) {
-      const sel = document.getElementById('packageSelect');
-      if (sel) {
-        for (let i = 0; i < sel.options.length; i++) {
-          if (sel.options[i].value === pkgName) {
-            sel.selectedIndex = i;
-            break;
-          }
+    // Hero Video Audio Toggle
+    const heroVideo = document.getElementById('heroPitchVideo');
+    const heroSoundBtn = document.getElementById('heroSoundBtn');
+    const heroSoundIcon = document.getElementById('heroSoundIcon');
+    const heroSoundText = document.getElementById('heroSoundText');
+
+    function toggleHeroSound() {
+      if (!heroVideo) return;
+      if (heroVideo.muted) {
+        // Pause any other playing reel
+        if (activeVideo && activeVideo !== heroVideo) {
+          activeVideo.pause();
+          const prevCard = activeVideo.closest('[data-video-card]');
+          if (prevCard) prevCard.classList.remove('playing');
+          activeVideo = null;
         }
+
+        heroVideo.muted = false;
+        heroSoundIcon.textContent = 'volume_up';
+        heroSoundText.textContent = 'Mute';
+      } else {
+        heroVideo.muted = true;
+        heroSoundIcon.textContent = 'volume_off';
+        heroSoundText.textContent = 'Unmute';
       }
-      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     }
 
-    function submitBrief(e) {
-      e.preventDefault();
-      const brand = document.getElementById('brandName').value.trim();
-      const email = document.getElementById('contactEmail').value.trim();
-      const pkg = document.getElementById('packageSelect').value;
-      const usage = document.getElementById('usageSelect').value;
-      const notes = document.getElementById('projectNotes').value.trim();
+    // Video Showcase Control: Tap to Play with Sound, Auto-Pause Others
+    let activeVideo = null;
 
-      const subject = encodeURIComponent(`UGC Project Brief: ${brand} (${pkg})`);
-      const body = encodeURIComponent(
-        `Hi Shawn,\n\n` +
-        `Brand / Industry: ${brand}\n` +
-        `Contact Email: ${email}\n` +
-        `Selected Package: ${pkg}\n` +
-        `Usage Rights: ${usage}\n\n` +
-        `Project Notes & Product Link:\n${notes}\n`
-      );
+    function handleVideoToggle(viewport) {
+      const video = viewport.querySelector('video');
+      const card = viewport.closest('[data-video-card]');
+      const hud = viewport.querySelector('.audio-indicator');
 
-      const feedback = document.getElementById('formFeedback');
-      feedback.classList.remove('hidden');
-      window.location.href = `mailto:shawn.mcadam@gmail.com?subject=${subject}&body=${body}`;
+      if (!video) return;
+
+      if (video.paused) {
+        // Mute hero video if it's currently unmuted
+        if (heroVideo && !heroVideo.muted) {
+          heroVideo.muted = true;
+          heroSoundIcon.textContent = 'volume_off';
+          heroSoundText.textContent = 'Unmute';
+        }
+
+        // Pause any previously playing video
+        if (activeVideo && activeVideo !== video) {
+          activeVideo.pause();
+          const prevCard = activeVideo.closest('[data-video-card]');
+          if (prevCard) prevCard.classList.remove('playing');
+        }
+
+        video.muted = false;
+        video.play().then(() => {
+          card.classList.add('playing');
+          if (hud) hud.innerHTML = '<span class="material-symbols-outlined" style="font-size: 12px;">pause</span> Tap to Pause';
+          activeVideo = video;
+        }).catch(() => {
+          video.muted = true;
+          video.play();
+          card.classList.add('playing');
+          if (hud) hud.innerHTML = '<span class="material-symbols-outlined" style="font-size: 12px;">volume_off</span> Playing (Muted)';
+          activeVideo = video;
+        });
+      } else {
+        video.pause();
+        card.classList.remove('playing');
+        if (hud) hud.innerHTML = '<span class="material-symbols-outlined" style="font-size: 12px;">volume_up</span> Tap to Listen';
+        activeVideo = null;
+      }
+    }
+
+    // Photography Category Filter
+    function filterPhotoCategory(category) {
+      const tabs = document.querySelectorAll('.photo-tab-btn');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const items = document.querySelectorAll('#stillsGrid .photo-card');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-cat') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Lightbox Controls
+    function showLightbox(src, alt) {
+      const modal = document.getElementById('photoLightbox');
+      const img = document.getElementById('lightboxTarget');
+      img.src = src;
+      img.alt = alt || 'Preview';
+      modal.classList.add('active');
+    }
+
+    function hideLightbox(event) {
+      const modal = document.getElementById('photoLightbox');
+      modal.classList.remove('active');
+      document.getElementById('lightboxTarget').src = '';
+    }
+
+    // Auto-select tier in form
+    function preselectTier(tierName) {
+      const dropdown = document.getElementById('tierDropdown');
+      if (dropdown) dropdown.value = tierName;
+    }
+
+    // Collab Form Submission
+    function submitCollabForm(event) {
+      event.preventDefault();
+      const btn = document.getElementById('collabSubmitBtn');
+      const status = document.getElementById('collabStatus');
+
+      const data = {
+        company: document.getElementById('companyInput').value,
+        email: document.getElementById('emailInput').value,
+        package: document.getElementById('tierDropdown').value,
+        timeline: document.getElementById('timelineDropdown').value,
+        details: document.getElementById('detailsInput').value
+      };
+
+      btn.disabled = true;
+      btn.textContent = 'Preparing Request...';
+
+      // Immediate Mailto Dispatch & Feedback
+      status.className = 'form-feedback success';
+      status.innerHTML = `<strong>Inquiry Dispatched!</strong> Opening email client to confirm with Shawn at shawn.mcadam@gmail.com. Typical response under 2 hours.`;
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = 'Send Collaboration Request';
+        const mailto = `mailto:shawn.mcadam@gmail.com?subject=UGC Booking: ${encodeURIComponent(data.company)} (${encodeURIComponent(data.package)})&body=${encodeURIComponent("Brand: " + data.company + "\nEmail: " + data.email + "\nPackage: " + data.package + "\nTimeline: " + data.timeline + "\n\nDetails:\n" + data.details)}`;
+        window.location.href = mailto;
+      }, 600);
     }
   </script>
 </body>

@@ -1,0 +1,14 @@
+{
+  "name": "summer-forest-880a",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    {
+      "pattern": "shawnmcadam.com",
+      "custom_domain": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+shawnmcadam.com. 1 IN A 185.199.108.153
+shawnmcadam.com. 1 IN A 185.199.109.153
+shawnmcadam.com. 1 IN A 185.199.110.153
+shawnmcadam.com. 1 IN A 185.199.111.153
+www.shawnmcadam.com. 1 IN CNAME caughtyouslipping.github.io.
